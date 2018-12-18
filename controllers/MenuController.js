@@ -48,7 +48,7 @@ module.exports = class MenuController {
     }
     addContact(){
         (this.book.addContactQuestions).then((answers) => {
-            this.book.addContact(answers.name, answers.phone). ((contact) => {
+            this.book.addContact(answers.name, answers.phone, answers.eMail).then((contact) => {
                 console.log("Contact added successfully!");
                 this.main();
             }).catch((err) => {
@@ -64,17 +64,15 @@ module.exports = class MenuController {
         console.log("Thanks for using AddressBloc!");
         process.exit();
     }
-<<<<<<< HEAD
 
     getContactCount(){
         return this.contacts.length;
-=======
+    }
     getDate(){
         this.clear();
         let today = new Date().toLocaleDateString();
         console.log(today)
         this.main();
->>>>>>> assignment-1-prompts-menu
     }
 
     remindMe(){
