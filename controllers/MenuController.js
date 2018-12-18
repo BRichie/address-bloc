@@ -41,7 +41,7 @@ module.exports = class MenuController {
     }
     addContact(){
         (this.book.addContactQuestions).then((answers) => {
-            this.book.addContact(answers.name, answers.phone). ((contact) => {
+            this.book.addContact(answers.name, answers.phone).then((contact) => {
                 console.log("Contact added successfully!");
                 this.main();
             }).catch((err) => {
