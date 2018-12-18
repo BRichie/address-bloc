@@ -76,6 +76,10 @@ module.exports = class MenuController {
         this.main();
 >>>>>>> assignment-1-prompts-menu
     }
+
+    remindMe(){
+        return "Learning is a life-long pursuit";
+    }
 }
   
 
