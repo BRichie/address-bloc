@@ -1,5 +1,5 @@
 {
-  "name": "address-bloc",
+  "name": "address-book",
   "version": "1.0.0",
   "description": "An application to model an address book in Node",
   "main": "app.js",
